@@ -1,0 +1,25 @@
+.playerBox{
+  width:300px;
+  height:300px;
+  display:block;
+  border:3px dotted blue;
+}
+.playerBox h1{
+  text-align:center;
+  margin-top:10px;
+}
+.centerMe{
+  width:50%;
+  display:block;
+  margin:0 auto;
+  text-align:center;
+}
+.centerMe p{
+  text-align:center;
+}
+.centerMe form{
+  display:inline;
+  margin:0;
+  padding:0;
+}
+

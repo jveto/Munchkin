@@ -1,0 +1,26 @@
+<div class="playerBox" *ngFor="let player of players">
+  <h1>{{player.name}}</h1>
+  <div class="centerMe">
+    <p>Gear: {{player.gear}}</p>
+    <form (submit)="plusGear(player.id)">
+      <input type="hidden" name="plusTest" value="test!" />
+      <input type="submit" value="+" />
+    </form>
+    <form (submit)="minusGear(player.id)">
+      <input type="submit" value="-" />
+    </form>
+  </div>
+  <div class="centerMe">
+    <p>Level: {{player.level}}</p>
+    <form (submit)="plusLevel(player.id)">
+      <input type="submit" value="+" />
+    </form>
+    <form (submit)="minusLevel(player.id)">
+      <input type="submit" value="-" />
+    </form>
+  </div>
+  <div class="centerMe">
+    <p>Power: {{player.power}}</p>
+  </div>
+
+</div>
